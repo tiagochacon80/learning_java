@@ -9,34 +9,26 @@ public class main {
 		Scanner sc = new Scanner(System.in);
 		
 		int x = sc.nextInt();
-		String day = "";
+		String day;
 		
-		switch (x) {
-		case 1:
+		if (x == 1) {
 			day = "sunday";
-			break;
-		case 2:
+		} else if (x == 2) {
 			day = "Monday";
-			break;
-		case 3:
+		}else if (x == 3) {
 			day = "Tuesday";
-			break;
-		case 4:
+		}else if (x == 4) {
 			day = "Wednesday";
-			break;
-		case 5:
+		}else if (x == 5) {
 			day = "thursday";
-			break;
-		case 6:
+		}else if (x == 6) {
 			day = "friday";
-			break;
-		case 7:
+		}else if (x == 7) {
 			day = "saturday";
-			break;
-		}		
+		}
 		
 		System.out.println("Today is " + day);
 
-		sc.close();
-	}
+	sc.close();
+}
 }

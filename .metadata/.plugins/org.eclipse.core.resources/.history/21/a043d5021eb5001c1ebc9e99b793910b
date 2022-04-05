@@ -17,22 +17,16 @@ public class main {
 			break;
 		case 2:
 			day = "Monday";
-			break;
 		case 3:
 			day = "Tuesday";
-			break;
 		case 4:
 			day = "Wednesday";
-			break;
 		case 5:
 			day = "thursday";
-			break;
 		case 6:
 			day = "friday";
-			break;
 		case 7:
 			day = "saturday";
-			break;
 		}		
 		
 		System.out.println("Today is " + day);
