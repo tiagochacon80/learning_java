@@ -10,7 +10,7 @@ public class exercicio01 {
 		int senha = sc.nextInt();
 		
 		while(senha != 2002) {
-			System.out.println("Senha invalida!");
+			System.out.println("Acesso negado");
 			senha = sc.nextInt();
 		}
 		
