@@ -16,13 +16,13 @@ public class main {
 			day = "sunday";
 			break;
 		case 2:
-			day = "Monday";
+			day = "monday";
 			break;
 		case 3:
-			day = "Tuesday";
+			day = "tuesday";
 			break;
 		case 4:
-			day = "Wednesday";
+			day = "wednesday";
 			break;
 		case 5:
 			day = "thursday";
