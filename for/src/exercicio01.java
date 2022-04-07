@@ -6,16 +6,14 @@ public class exercicio01 {
 
 		Scanner sc = new Scanner(System.in);
 			
-			
-		int N = sc.nextInt();
+		System.out.println("Digite um numero ?");
+		int x = sc.nextInt();
 		
-		for(int i = 0; i<N; i++) {
+		for(int i = x; i<=x; i--) {
 			if(i % 2 == 1) {
 				System.out.println(i);
-			}
-		}		
-		
+			}			
+		}
 		sc.close();
 	}
-
 }
