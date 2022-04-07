@@ -13,8 +13,8 @@ public class main {
 		String s06 = original.replace('a', 'x');
 		String s07 = original.replace("abc", "xy");
 		int i = original.indexOf("bc");
-		int j = original.lastIndexOf("bc");
-		
+		int j = original.lastIndexOf("bc");		
+				
 		System.out.println(original);	
 		System.out.println("toLowerCase: " + s01);
 		System.out.println("toUpperCase: " + s02);
@@ -25,6 +25,16 @@ public class main {
 		System.out.println("replace('abcde', 'xy'): -" + s07 + "-");
 		System.out.println("Index of 'bc': " + i);
 		System.out.println("Index of 'bc': " + j);
+		
+		//function split
+		
+		String s = "potato apple lemon";
+		String[] vect = s.split(" ");
+		
+		System.out.println(vect[0]);
+		System.out.println(vect[1]);
+		System.out.println(vect[2]);
+		
 	}
 
 }
