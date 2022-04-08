@@ -4,9 +4,9 @@ public class main {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);		
+		Scanner sc = new Scanner(System.in);	
 		
-		System.out.println("Enter three numbers: ");
+		System.out.println("Enter 3 numbers: ");
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
@@ -16,11 +16,12 @@ public class main {
 		showResult(higher);
 		
 		sc.close();
+		
 	}
 	
 	public static int max(int num1, int num2, int num3) {
 		int aux;
-		if (num1 > num2 && num1 > num3) {
+		if (num1 > num2 && num2 > num3) {
 			aux = num1;
 		}
 		else if (num2 > num3) {
@@ -34,6 +35,5 @@ public class main {
 	
 	public static void showResult(int value) {
 		System.out.println("Higher = " + value);
-	}
-
+	}	
 }
