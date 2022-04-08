@@ -26,8 +26,7 @@ public class main {
 		System.out.println("Index of 'bc': " + i);
 		System.out.println("Index of 'bc': " + j);
 		
-		//function split
-		
+		//function split		
 		String s = "potato apple lemon";
 		String[] vect = s.split(" ");
 		

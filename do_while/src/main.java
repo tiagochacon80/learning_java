@@ -15,9 +15,9 @@ public class main {
 			double C = sc.nextDouble();
 			double F = 9.0 * C / 5.0 + 32.0;
 			System.out.printf("Equivalente em Fahrenheit: %.1f%n", F);
-			System.out.println("Deseja converter outra temperatura: (s/n)?");
+			System.out.print("Deseja converter outra temperatura: (s/n)?");
 			resp = sc.next().charAt(0);
-		} while (resp != 0);		
+		} while (resp != 'n');		
 		
 		sc.close();	
 	}		
