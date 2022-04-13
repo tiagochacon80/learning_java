@@ -29,6 +29,8 @@ public class Program {
 		product.addProducts(quantity);
 		
 		System.out.println();
+		
+		
 		System.out.println("Updated data: " + product);
 		
 		System.out.println();
