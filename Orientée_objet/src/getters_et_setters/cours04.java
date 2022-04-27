@@ -8,5 +8,4 @@ public class cours04 {
 		Caneta c2 = new Caneta("Poly", "Vermelha", 1.7f);
 		c2.status();
 	}
-
 }

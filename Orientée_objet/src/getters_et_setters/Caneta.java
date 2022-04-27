@@ -11,7 +11,7 @@ public class Caneta {
 		this.cor = c;
 		this.ponta = p;
 		this.tampar();		
-	}
+	}	
 	
 	public String getModelo() {
 		return this.modelo;		
@@ -35,7 +35,7 @@ public class Caneta {
 		this.tampada = false;
 	}
 	
-	public void status() {
+	public void status() { //metodo para informar os status da caneta (impressao na tela)
 		System.out.println("Sobra a caneta: ");
 		System.out.println("Modelo: " + this.modelo);
 		System.out.println("Ponta: " + this.ponta);
