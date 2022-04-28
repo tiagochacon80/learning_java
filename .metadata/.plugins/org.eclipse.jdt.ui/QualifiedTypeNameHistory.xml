@@ -8,6 +8,8 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="entites2.Employee"/>
     <fullyQualifiedTypeName name="règles_de_visibilité.Caneta"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="getters_et_setters.Caneta"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction"/>
+    <fullyQualifiedTypeName name="projet_compte_bancaire.CompteBancaire"/>
 </qualifiedTypeNameHistroy>
