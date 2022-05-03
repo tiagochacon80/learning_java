@@ -1,12 +1,24 @@
 import models.Product;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
-
-		Product prod1 = new Product();
-		prod1.setDescription("Smartphone");
-		prod1.setId(1);
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Entrez la description du nouveau produit: ");
+		String description = scanner.nextLine();
+		
+		System.out.print("Entrez l'ID du nouveau produit: ");
+		int id = scanner.nextInt();
+		
+		Product nouveauProduct = new Product();
+		nouveauProduct.setId(id);
+		nouveauProduct.setDescription(description);
+		
+		System.out.println("Le produit a été créé avec succès!");
+		System.out.println("---ID: " + nouveauProduct.getId());
+		System.out.println("---Description: " + nouveauProduct.getDescription());
 	}
-
 }
