@@ -72,7 +72,7 @@ public class CompteBancaire {
 			System.out.println("Impossible de payer, car le compte est fermé!");
 		}
 	}
-	//Méthode spéciaux
+	//Méthodes consultants et modificateurs
 	public CompteBancaire() {
 		this.solde=0;
 		this.status=false;
