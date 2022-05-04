@@ -13,9 +13,9 @@ public class Main {
 		System.out.print("Entrez l'ID du nouveau produit: ");
 		int id = scanner.nextInt();
 		
-		Product nouveauProduct = new Product();
-		nouveauProduct.setId(id);
-		nouveauProduct.setDescription(description);
+		Product nouveauProduct = new Product(id, description);
+		//nouveauProduct.setId(id);
+		//nouveauProduct.setDescription(description);
 		
 		System.out.println("Le produit a été créé avec succès!");
 		System.out.println("---ID: " + nouveauProduct.getId());

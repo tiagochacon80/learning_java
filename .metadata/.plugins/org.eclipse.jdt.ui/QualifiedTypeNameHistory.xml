@@ -4,12 +4,14 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="entites.Rectangle"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="entites2.Employee"/>
     <fullyQualifiedTypeName name="règles_de_visibilité.Caneta"/>
     <fullyQualifiedTypeName name="getters_et_setters.Caneta"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction"/>
     <fullyQualifiedTypeName name="projet_compte_bancaire.CompteBancaire"/>
+    <fullyQualifiedTypeName name="entites.Product"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="models.Product"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
