@@ -2,9 +2,9 @@ package entities;
 
 public class Product {
 	
-	public String name;
-	public double price;
-	public int quantity;
+	private String name;
+	private double price;
+	private int quantity;
 	
 	//Construteur
 	public Product(String name, double price, int quantity) {
@@ -12,6 +12,16 @@ public class Product {
 		this.price = price;
 		this.quantity = quantity;
 	}
+	
+	//Construteur de surcharge 
+	public Product(String name, double price) {
+		this.name = name;
+		this.price = price;	
+		quantity = 0;
+		//Cette variable est optionnel, Java commence toujours un entier avec 0
+	}
+	
+	
 	
 	public double totalValueInStock() {
 		return price * quantity;

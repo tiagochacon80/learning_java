@@ -9,18 +9,14 @@ public class Program {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner(System.in);
-				
-		
+		Scanner sc = new Scanner(System.in);		
 		
 		System.out.println("Enter product data: ");
 		System.out.print("Name: ");		
 		String name = sc.nextLine();		
 		System.out.print("Price: ");
-		double price = sc.nextDouble();
-		System.out.print("Quantity in stock: ");
-		int quantity = sc.nextInt();
-		Product product = new Product(name, price, quantity);
+		double price = sc.nextDouble();		
+		Product product = new Product(name, price);
 		//Como foi criado um construtor a instanciaçao acontece depois da leitura dos dados(name, price, quantity)
 		
 		System.out.println();
@@ -28,7 +24,7 @@ public class Program {
 		
 		System.out.println();
 		System.out.println("Enter the number of products to be added in stock: ");
-		quantity = sc.nextInt();
+		int quantity = sc.nextInt();
 		product.addProducts(quantity);
 		
 		System.out.println();
