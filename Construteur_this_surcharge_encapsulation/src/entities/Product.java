@@ -6,7 +6,7 @@ public class Product {
 	public double price;
 	public int quantity;
 	
-	//Na hora de instanciar o objeto o construtor ira passar 3 dados para os 3 atributos do objeto
+	//Construteur
 	public Product(String name, double price, int quantity) {
 		this.name = name;
 		this.price = price;
@@ -16,7 +16,7 @@ public class Product {
 	public double totalValueInStock() {
 		return price * quantity;
 	}
-	//Porque nao existe retorno?
+	
 	public void addProducts(int quantity) {
 		this.quantity += quantity;
 	}
