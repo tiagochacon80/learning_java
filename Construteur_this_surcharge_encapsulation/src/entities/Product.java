@@ -4,7 +4,7 @@ public class Product {
 	
 	private String name;
 	private double price;
-	private int quantity;
+	private int quantity;	
 	
 	//Construteur
 	public Product(String name, double price, int quantity) {
@@ -19,9 +19,7 @@ public class Product {
 		this.price = price;	
 		quantity = 0;
 		//Cette variable est optionnel, Java commence toujours un entier avec 0
-	}
-	
-	
+	}	
 	
 	public double totalValueInStock() {
 		return price * quantity;
