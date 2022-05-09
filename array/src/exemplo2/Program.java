@@ -1,6 +1,5 @@
 package exemplo2;
 
-import java.beans.VetoableChangeSupport;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -11,20 +10,18 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
-		//Criando um vetor de "n" produtos
+		
 		Product[] vect = new Product[n];
 		
 		for(int i=0; i<vect.length; i++) {
 			sc.nextLine();
 			String name = sc.nextLine();
-			double price = sc.nextDouble();
-			//Instanciando um novo produto com os dados "name" e "price" e fazer com que a posiçao i aponte(guarde) para o novo produto
+			double price = sc.nextDouble();			
 			vect[i] = new Product(name, price);
 		}
 		
 		double sum = 0.0;
-		for (int i=0; i<vect.length; i++) {
-			//Acessando o array na posiçao i e acessando somente o preço do produto
+		for (int i=0; i<vect.length; i++) {			
 			sum += vect[i].getPrice();
 		}
 		
