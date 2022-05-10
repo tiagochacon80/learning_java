@@ -24,7 +24,5 @@ public class Rent {
 	
 	public String toString() {
 		return name + ", " + email;
-	}
-	
-	
+	}	
 }
