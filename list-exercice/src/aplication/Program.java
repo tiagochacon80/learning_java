@@ -36,14 +36,42 @@ public class Program {
 			//Instanciando o objeto
 			Employee emp = new Employee(id, name, salary);
 			
+			//Incerindo o objeto criado na lista
 			list.add(emp);
 		}
 		
+		System.out.println();
+		System.out.print("enter the employee id that will have salary increase : ");
+		int idSalary = sc.nextInt();
+		//Procurando a posiçao do idSalary dentro da lista
+		Integer pos = positionId(list, idSalary); 
+		//Se a posiçao for nula é porque nao existe id
+		if(pos == null) {
+			System.out.println("This id does not exist!");
+		}
+		else {
+			System.out.print("Enter the percentage: ");
+			double percent = sc.nextDouble();
+			//Acessa o funcionario que esta na posiçao "pos" e fazer o incremento do salario
+			list.get(pos).increaseSalary(percent);
+		}
 		
-		
+		System.out.println();
+		System.out.println("List of employees:");
+		for(Employee emp : list) {
+			System.out.println(emp);
+		}	
 		
 		sc.close();		
 
 	}
-
+	//Funçao para procurar a posiçao do "id"
+	public static Integer positionId(List<Employee> list, int id) {
+		for (int i = 0; i < list.size(); i++) {
+			if(list.get(i).getId() == id) {
+				return i;
+			}
+		}
+		return null;
+	}
 }
