@@ -68,6 +68,7 @@ public class Program {
 	//Funçao para procurar a posiçao do "id"
 	public static Integer positionId(List<Employee> list, int id) {
 		for (int i = 0; i < list.size(); i++) {
+			//list.get() acessa o elemento na posiçao i
 			if(list.get(i).getId() == id) {
 				return i;
 			}
