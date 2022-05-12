@@ -43,8 +43,9 @@ public class Program {
 		System.out.println();
 		System.out.print("enter the employee id that will have salary increase : ");
 		int idSalary = sc.nextInt();
+		
 		//Procurando a posiçao do idSalary dentro da lista
-		Integer pos = positionId(list, idSalary); 
+		Integer pos = positionId(list, idSalary);		
 		//Se a posiçao for nula é porque nao existe id
 		if(pos == null) {
 			System.out.println("This id does not exist!");
@@ -52,7 +53,7 @@ public class Program {
 		else {
 			System.out.print("Enter the percentage: ");
 			double percent = sc.nextDouble();
-			//Acessa o funcionario que esta na posiçao "pos" e fazer o incremento do salario
+			//Acessa o funcionario que esta na posiçao "pos" e faz o incremento do salario
 			list.get(pos).increaseSalary(percent);
 		}
 		
@@ -63,7 +64,6 @@ public class Program {
 		}	
 		
 		sc.close();		
-
 	}
 	//Funçao para procurar a posiçao do "id"
 	public static Integer positionId(List<Employee> list, int id) {
