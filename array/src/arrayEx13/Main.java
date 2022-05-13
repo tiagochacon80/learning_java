@@ -1,5 +1,6 @@
-package arrayEx12;
+package arrayEx13;
 
+import java.util.Iterator;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -16,19 +17,23 @@ public class Main {
 			System.out.println("Informez la valeur du vecteur A de la position " + (i+1));
 			vectA[i] = sc.nextInt();
 		}		
-		int somme = 0;
+		
+		double somme = 0;		
 		for(int i=0; i<vectA.length; i++) {
-			somme += vectA[i];
-		}		
+			if(vectA[i] % 5 == 0) {
+				somme += vectA[i];				
+			}
+		}
 		
 		System.out.println("Array A: ");
 		for(int i=0; i<vectA.length; i++) {
-			System.out.print(vectA[i] + " ");
-		}
+			System.out.print(vectA[i] + " ");			
+		}		
 		
 		System.out.println();
-		System.out.println("La somme est = " + somme);
+		System.out.println("La somme de multiples de 5 du vecteur A = " + somme);		
 		
-		sc.close();
+		
+		sc.close();		
 	}
 }
