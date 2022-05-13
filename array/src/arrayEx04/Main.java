@@ -1,4 +1,4 @@
-//Créez un vecteur A avec 15 éléments entiers. Construire un vecteur B du même type et de la même taille, où chaque élément du vecteur B doit être la racine carrée de l'élément respectif de A
+//Créez un vecteur A avec 15 éléments entiers. Construire un vecteur B du même type et de la même taille, où chaque élément du vecteur B doit être le carré de l'élément respectif de A
 
 package arrayEx04;
 
@@ -9,30 +9,28 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); 
 		
-		double[] vectA = new double[15];
-		double[] vectB = new double[vectA.length];
+		int[] vectA = new int[15];
+		int[] vectB = new int[vectA.length];
 		
 		for(int i=0; i<vectA.length; i++) {
-			System.out.println("Informez la valeur de la position: " + i);
+			System.out.println("Informez la valuer de la position " + (i+1));
 			vectA[i] = sc.nextInt();
 			
-			vectB[i] = Math.sqrt(vectA[i]);
+			vectB[i] = vectA[i] * vectA[i];			
 		}
-		System.out.print("Array A = ");
-		for (int i=0; i<vectA.length; i++) {
-			System.out.println(vectA[i] + " ");
+		
+		System.out.println("Array A:");
+		for(int i=0; i<vectA.length; i++) {
+			System.out.print(vectA[i] + " ");
 		}
+		
 		System.out.println();
-		
-		System.out.print("Array B = ");
-		for (int i=0; i<vectB.length; i++) {
-			System.out.println(vectB[i] + " ");
+		System.out.println("Array B:");
+		for(int i=0; i<vectB.length; i++) {
+			System.out.print(vectB[i] + " ");
 		}
-		
-		
-		
 	}
 
 }
