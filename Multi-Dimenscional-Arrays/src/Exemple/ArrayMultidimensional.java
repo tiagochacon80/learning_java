@@ -9,7 +9,7 @@ public class ArrayMultidimensional {
 		for(int i=0; i<arrayTri.length; i++) {
 			for(int j=0; j<arrayTri[i].length; j++) {
 				for(int k=0; k<arrayTri[i][j].length; k++) {
-					System.out.println("i = " + i + " j = " + j + " k = " + k);
+					//System.out.println("i = " + i + " j = " + j + " k = " + k);
 					arrayTri[i][j][k] = i + j + k;
 				}
 			}
