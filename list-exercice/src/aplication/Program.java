@@ -45,7 +45,7 @@ public class Program {
 		int idSalary = sc.nextInt();
 		
 		//Procurando a posiçao do idSalary dentro da lista
-		Integer pos = positionId(list, idSalary);		
+		Employee pos = positionId(list, idSalary);		
 		//Se a posiçao for nula é porque nao existe id
 		if(pos == null) {
 			System.out.println("This id does not exist!");
@@ -54,24 +54,29 @@ public class Program {
 			System.out.print("Enter the percentage: ");
 			double percent = sc.nextDouble();
 			//Acessa o funcionario que esta na posiçao "pos" e faz o incremento do salario
-			list.get(pos).increaseSalary(percent);
+			pos.increaseSalary(percent);
 		}
 		
 		System.out.println();
 		System.out.println("List of employees:");
-		for(Employee emp : list) {
+		for(Employee emp : list) { //Para cada elemento da lista
 			System.out.println(emp);
 		}	
 		
 		sc.close();		
 	}
 	//Funçao para procurar a posiçao do "id"
-	public static Integer positionId(List<Employee> list, int id) {
-		for (int i = 0; i < list.size(); i++) {
+	public static Employee positionId(List<Employee> list, int id) {
+		/*for (int i = 0; i < list.size(); i++) {
 			//list.get() acessa o elemento na posiçao i
 			if(list.get(i).getId() == id) {
 				return i;
 			}
+		}*/		
+		for(Employee emp : list){
+		     if(emp.getId() == id){
+		          return emp;
+		     }
 		}
 		return null;
 	}

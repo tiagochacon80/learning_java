@@ -23,14 +23,11 @@ public class Main {
 				somme += vectA[i];
 				impair++;
 			}
-		}		
-		
-		
+		}				
 		System.out.println("Array A: ");
 		for(int i=0; i<vectA.length; i++) {
 			System.out.print(vectA[i] + " ");
-		}
-		
+		}		
 		System.out.println();
 		System.out.print("Somme = " + somme);
 		System.out.println();
@@ -38,5 +35,4 @@ public class Main {
 				
 		sc.close();
 	}
-
 }
