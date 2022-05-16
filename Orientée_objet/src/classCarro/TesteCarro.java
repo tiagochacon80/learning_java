@@ -1,4 +1,4 @@
-package ClassCarro;
+package classCarro;
 
 public class TesteCarro {
 
