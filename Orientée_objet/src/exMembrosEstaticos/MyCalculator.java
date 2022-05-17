@@ -19,8 +19,7 @@ public class MyCalculator {
 		
 		for(int i=0; i<arrayInteger.length; i++) {
 			total += arrayInteger[i];
-		}
-		
+		}		
 		return total;
 	}
 
