@@ -21,14 +21,12 @@ public class Program {
 		cal.add(Calendar.HOUR_OF_DAY, 4);		
 		day = cal.getTime();
 		int minutes = cal.get(Calendar.MINUTE);
+		//Pour le mois, il faut ajouter 1, car il commence par le 0;
 		int month = 1 + cal.get(Calendar.MONTH);
 						
 		System.out.println(day);
 		System.out.println("Minutes: " + minutes);
-		System.out.println("Month: " + month);
-		
-		
+		System.out.println("Month: " + month);		
 
 	}
-
 }
