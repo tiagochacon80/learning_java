@@ -13,8 +13,8 @@ public class Lutador {
 	private int empates;
 	
 	public void apresentar() {
-		System.out.println("Chegou a hora! Apresentamos o lutador" + this.getNome());
-		System.out.println("Diretamente da " + this.getNacionalidade());
+		System.out.println(this.getNome());
+		System.out.println("Nacionalidade " + this.getNacionalidade());
 		System.out.println("Com " + this.getIdade() + " anos");
 		System.out.println("Pesando " + this.getPeso() + " kg");
 		System.out.println("Seu cartel inclui " + this.getVitorias() + " Vitorias");
@@ -22,8 +22,9 @@ public class Lutador {
 		System.out.println(this.getEmpates() + " Empates");
 	}
 	public void status() {
-		System.out.println("No outro corner, o desafiante " + getNome());
-		System.out.println("Diretemante de " + getNacionalidade());
+		System.out.println();
+		System.out.println(this.getNome());
+		System.out.println("Nacionalidade " + getNacionalidade());
 		System.out.println("é um peso " + this.getCategoria());		
 		System.out.println("Com um cartel de " + this.getVitorias() + " Vitorias");
 		System.out.println(this.getDerrotas() + " Derrotas");
