@@ -19,5 +19,4 @@ public class Program {
 		l[1].status();
 		UEC01.lutar();
 	}
-
 }
