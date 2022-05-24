@@ -28,7 +28,7 @@ public class Program {
 		String workerLevel = sc.nextLine();
 		System.out.print("Base Salary: ");
 		Double baseSalary = sc.nextDouble();
-		//Um novo objeto foi instanciado do tipo Worker, com os dados desse objeto, associado a esse objeto tem u outro objeto com o nome de Departement, com o nome do department digitado pelo usuarios
+		//Um novo objeto foi instanciado do tipo Worker, com os dados desse objeto, associado a esse objeto tem um outro objeto com o nome de Departement, com o nome do department digitado pelo usuarios
 		Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, new Department(departmentName));
 		
 		System.out.print("How many contracts to this worker? ");
