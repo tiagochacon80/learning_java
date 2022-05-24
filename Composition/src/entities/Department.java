@@ -7,6 +7,10 @@ public class Department {
 	public Department() {		
 	}
 	
+	public Department(String name) {
+		this.name = name;
+	}
+	
 	public String getName() {
 		return name;
 	}
