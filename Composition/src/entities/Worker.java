@@ -65,10 +65,10 @@ public class Worker {
 		return contracts;
 	}	
 	
-	public void addContract(HourContract contract) { //Nao entendi porque ele recebe esse argumento?
+	public void addContract(HourContract contract) { 
 		contracts.add(contract);
 	}
-	public void removeContract(HourContract contract) { //Nao entendi porque ele recebe esse argumento?
+	public void removeContract(HourContract contract) { 
 		contracts.remove(contract);
 	}
 	
