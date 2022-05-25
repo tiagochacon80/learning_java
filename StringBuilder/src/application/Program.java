@@ -14,7 +14,7 @@ public class Program {
 		
 		Comment c1 = new Comment("Have a nice trip!");
 		Comment c2 = new Comment("Wow that's awesome!");
-		Post p1 = new Post(sdf.parse("2018-06-21 13:05:44"), "Travaling to New Zeland", "I'm going to visit this wonderful conutry!", 12);
+		Post p1 = new Post(sdf.parse("2018-06-21 13:05:44"), "Travaling to New Zeland", "I'm going to visit this wonderful country!", 12);
 		
 		p1.addComment(c1);
 		p1.addComment(c2);

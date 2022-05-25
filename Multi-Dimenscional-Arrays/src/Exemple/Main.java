@@ -16,7 +16,7 @@ public class Main {
 		noteEleves[1][2] = 7;
 		noteEleves[1][3] = 9;
 		
-		noteEleves[2][0] = 9;
+		noteEleves[2][0] = 8;
 		noteEleves[2][1] = 8;
 		noteEleves[2][2] = 7;
 		noteEleves[2][3] = 9;
