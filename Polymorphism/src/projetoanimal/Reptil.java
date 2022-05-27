@@ -17,8 +17,5 @@ public class Reptil extends Animal{
 	public void emitirSom() {
 		System.out.println("Som de réptil");		
 	}
-
-	
-	
 	
 }
