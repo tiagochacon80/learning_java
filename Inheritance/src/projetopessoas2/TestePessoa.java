@@ -16,7 +16,14 @@ public class TestePessoa {
 		a1.setCurso("Informatica");
 		a1.setMatricula(1212);
 		a1.setSexo("F");
-		a1.pagarMensalidade();		
-
+		a1.pagarMensalidade();	
+		
+		Bolsista b1 = new Bolsista();
+		b1.setMatricula(1313);
+		b1.setNome("Jorge");
+		b1.setBolsa(12.5f);
+		b1.setSexo("M");
+		b1.pagarMensalidade();
+	
 	}
 }
