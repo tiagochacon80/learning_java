@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="entities.Employee"/>
-    <fullyQualifiedTypeName name="ClassCarro.Carro"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="java.text.Format"/>
     <fullyQualifiedTypeName name="java.util.TimeZone"/>
@@ -23,7 +21,6 @@
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="entities.Worker"/>
     <fullyQualifiedTypeName name="entities.enums.WorkerLevel"/>
     <fullyQualifiedTypeName name="entities.Department"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="projetosobrecarga.Mamifero"/>
     <fullyQualifiedTypeName name="projetosobrecarga.Cachorro"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="projetoControlador.Controlador"/>
+    <fullyQualifiedTypeName name="projetoControlador.ControleRemoto"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
