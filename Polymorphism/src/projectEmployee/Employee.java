@@ -43,6 +43,4 @@ public class Employee {
 		return hours * valuePerHour;
 	}
 	
-	
-	
 }

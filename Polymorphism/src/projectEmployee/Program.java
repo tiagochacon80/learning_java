@@ -14,7 +14,7 @@ public class Program {
 		
 		List<Employee> list = new ArrayList<>(); 
 		
-		System.out.println("Enter the number os employees: ");
+		System.out.print("Enter the number os employees: ");
 		int n = sc.nextInt();
 		
 		for (int i=1; i<=n; i++) {
@@ -22,7 +22,7 @@ public class Program {
 			System.out.print("Outsourced (y/n)? ");
 			char ch = sc.next().charAt(0);
 			System.out.print("name: ");
-			sc.next();
+			sc.nextLine();
 			String name = sc.nextLine();
 			System.out.print("Numbers of hours worked: ");
 			int hours = sc.nextInt();
@@ -30,12 +30,18 @@ public class Program {
 			double valuePerHour = sc.nextDouble();
 			if(ch == 'y') {
 				System.out.print("Additional charge: ");
-				double additionalCharge = sc.nextDouble();
-				Employee emp = new OutsourceEmployee(name, hours, valuePerHour, additionalCharge); 
-				list.add(emp);
+				double additionalCharge = sc.nextDouble();				
+				list.add(new OutsourceEmployee(name, hours, valuePerHour, additionalCharge));
+			}
+			else {
+				list.add(new Employee(name, hours, valuePerHour));
 			}
 		}
-		
+		System.out.println();
+		System.out.println("PAYMENTS: ");
+		for(Employee emp : list) {
+			System.out.println(emp.getName() + " - $ " + String.format("%.2f", emp.payment()));
+		}
 		
 		sc.close();
 	}
