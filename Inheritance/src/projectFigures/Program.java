@@ -21,12 +21,12 @@ public class Program {
 			System.out.println("Shape #" + i + "data:");
 			System.out.print("Rectangle or Circle (r/c): ");
 			char type = sc.next().charAt(0);
-			System.out.print("Color (BLACK/ BLUE/RED): ");
+			System.out.print("Color (BLACK/BLUE/RED): ");
 			Color color = Color.valueOf(sc.next());	
 			if(type == 'r') {
 				System.out.print("Width: ");
 				double width = sc.nextDouble();
-				System.out.println("Height: ");
+				System.out.print("Height: ");
 				double height = sc.nextDouble();
 				list.add(new Rectangle(color, width, height));
 			} else {
