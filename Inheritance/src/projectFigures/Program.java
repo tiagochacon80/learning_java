@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
+import javax.swing.text.html.HTMLDocument.HTMLReader.ParagraphAction;
+
 public class Program {
 
 	public static void main(String[] args) {
@@ -37,6 +39,7 @@ public class Program {
 		}		
 		System.out.println();
 		System.out.println("SHAPE AREAS:");
+		//Para cada Shape "shape" na minha lista lista "list"
 		for(Shape shape : list) {
 			System.out.println(String.format("%.2f", shape.area()));
 		}
