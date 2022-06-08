@@ -38,17 +38,19 @@ public class Program {
 				list.add(new Company(name, anualIncome, numberEmployee));
 			}			
 		}
-		double sum = 0.0;
+		//Total por individuo
 		System.out.println();
 		System.out.println("TAXES PAID:");
-		for(TaxPayer taxPayer : list) {
-			double tax = taxPayer.tax();
-			System.out.println(taxPayer.getName() + ": $ " + String.format("%.2f", tax));
-			sum += tax;
-		}
-		
+		for(TaxPayer tx : list) {			
+			System.out.println(tx.getName() + ": $ " + String.format("%.2f", tx.tax()));			
+		}			
+		//Total des taxas
 		System.out.println();
-		System.out.println("TOTAL TAXES: $ " + String.format("%.2f", sum));
+		double sum = 0.0;
+		for(TaxPayer tx : list) {
+			sum += tx.tax();
+			System.out.println("TOTAL TAXES: $ " + String.format("%.2f", sum));
+		}		
 		sc.close();
 	}
 }
