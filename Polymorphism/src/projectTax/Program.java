@@ -18,6 +18,7 @@ public class Program {
 		int taxPayers = sc.nextInt();
 		
 		for(int i=1; i<=taxPayers; i++) {
+			System.out.println();
 			System.out.println("Tax payer #" + i + " data:");
 			System.out.print("Individual or company (i/c): ");
 			char ch = sc.next().charAt(0);			
@@ -38,6 +39,7 @@ public class Program {
 			}			
 		}
 		double sum = 0.0;
+		System.out.println();
 		System.out.println("TAXES PAID:");
 		for(TaxPayer taxPayer : list) {
 			double tax = taxPayer.tax();
