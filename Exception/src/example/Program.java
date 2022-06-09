@@ -17,6 +17,7 @@ public class Program {
 		catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Invalid position");
 		}
+		//Valor invalido para o input
 		catch (InputMismatchException e) {
 			System.out.println("Input error");
 		}
