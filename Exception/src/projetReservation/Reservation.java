@@ -41,7 +41,7 @@ public class Reservation {
 		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);		
 	}
 	//Esse método recebe duas datas e atualiza o checkIn e o checkOut
-	public void pudateDates(Date checkIn, Date checkOut) {
+	public void updateDates(Date checkIn, Date checkOut) {
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
 	}
