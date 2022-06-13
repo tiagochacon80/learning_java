@@ -12,7 +12,10 @@ public class Reservation {
 	
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
-	public Reservation(Integer rooNumber, Date checkIn, Date checkOut) {		
+	public Reservation(Integer rooNumber, Date checkIn, Date checkOut) {
+		if (!checkOut.after(checkIn)) {
+			throw new DomainException("Check-out date must be after check-in date");
+		}
 		this.roomNumber = rooNumber;
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;		
@@ -37,22 +40,20 @@ public class Reservation {
 	public long duration() {
 		//Diferença entre as duas datas em milisegundos
 		long diff = checkOut.getTime() - checkIn.getTime();
-		//Convertendo milisegundos para dias
+		//Convertendo milisegundos em dias
 		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);		
 	}
 	//Esse método recebe duas datas e atualiza o checkIn e o checkOut
-	public String updateDates(Date checkIn, Date checkOut) {		
+	public void updateDates(Date checkIn, Date checkOut) {		
 		Date now = new Date();
 		if (checkIn.before(now) || checkOut.before(now)) {
-			return "Error in resevation: Resevation dates for update must be future dates";
+			throw new DomainException("Error in resevation: Resevation dates for update must be future dates");
 		}
 		if (!checkOut.after(checkIn)) {
-			return "Check-out date must be after check-in date";
+			throw new DomainException("Check-out date must be after check-in date");
 		}
 		this.checkIn = checkIn;
-		this.checkOut = checkOut;
-		//Se retona null, nao tem erro
-		return null;
+		this.checkOut = checkOut;		
 	}
 	
 	@Override
