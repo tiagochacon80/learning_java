@@ -41,9 +41,18 @@ public class Reservation {
 		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);		
 	}
 	//Esse método recebe duas datas e atualiza o checkIn e o checkOut
-	public void updateDates(Date checkIn, Date checkOut) {
+	public String updateDates(Date checkIn, Date checkOut) {		
+		Date now = new Date();
+		if (checkIn.before(now) || checkOut.before(now)) {
+			return "Error in resevation: Resevation dates for update must be future dates";
+		}
+		if (!checkOut.after(checkIn)) {
+			return "Check-out date must be after check-in date";
+		}
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
+		//Se retona null, nao tem erro
+		return null;
 	}
 	
 	@Override
