@@ -32,7 +32,7 @@ public class Program {
 			System.out.printf("New balance: %.2f%n", acc.getBalance());
 		}
 		catch (BusinessException e){
-			System.out.println(e.getMessage());
+				System.out.println(e.getMessage());
 		}
 		
 		sc.close();
