@@ -10,12 +10,14 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);		
 		
+		//Métodos static nao precisam de obejtos para serem chamados
+		
 		System.out.print("Enter radius: ");
 		double radius = sc.nextDouble();
 		
 		double c = Calculator.circumference(radius);
 		
-		double v = Calculator.volume(radius);	
+		double v = Calculator.volume(radius);
 		
 		System.out.printf("Circumference: %.2f%n", c);
 		System.out.printf("Volume: %.2f%n", v);

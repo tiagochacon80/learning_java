@@ -2,7 +2,6 @@ package membrosEstaticos;
 
 public class Calculator {
 	
-	//declaraçao de uma constante
 	public static final double PI = 3.14159;
 	
 	public static double circumference(double radius) {
@@ -11,5 +10,5 @@ public class Calculator {
 	
 	public static double volume(double radius) {
 		return 4.0 * PI * radius * radius * radius / 3.0;
-	}
+	}	
 }
