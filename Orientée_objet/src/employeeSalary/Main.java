@@ -8,23 +8,22 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner(System.in);		
+		Scanner sc = new Scanner(System.in);
 		
-		String name1, name2;
-		double valuePerHour1, valuePerHour2, total;
-		int hour1, hour2;
+		Employee e1 = new Employee();
+		Employee e2 = new Employee();		
 		
 		System.out.println("First employee data: ");
-		name1 = sc.next(); 
-		valuePerHour1 = sc.nextDouble();
-		hour1 = sc.nextInt();
+		e1.name = sc.next(); 
+		e1.valuePerHour = sc.nextDouble();
+		e1.hour = sc.nextInt();
 		
 		System.out.println("Second employee data: ");
-		name2 = sc.next();
-		valuePerHour2 = sc.nextDouble();
-		hour2 = sc.nextInt();
+		e2.name = sc.next();
+		e2.valuePerHour = sc.nextDouble();
+		e2.hour = sc.nextInt();
 		
-		total = valuePerHour1 * hour1 + valuePerHour2 * hour2;
+		double total = e1.total() + e2.total();
 		
 		System.out.printf("Total = %.2f%n", total);		
 		
