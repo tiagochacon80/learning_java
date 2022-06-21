@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="projetoanimal.Peixe"/>
-    <fullyQualifiedTypeName name="projetoanimal.Canguro"/>
-    <fullyQualifiedTypeName name="projetoanimal.Cachorro"/>
-    <fullyQualifiedTypeName name="projetoanimal.Cobra"/>
     <fullyQualifiedTypeName name="projetoanimal.Arara"/>
     <fullyQualifiedTypeName name="projetoanimal.Tartaruga"/>
     <fullyQualifiedTypeName name="projetoanimal.GoldFish"/>
@@ -29,7 +25,6 @@
     <fullyQualifiedTypeName name="projectTax.Individual"/>
     <fullyQualifiedTypeName name="projectTax.Company"/>
     <fullyQualifiedTypeName name="projectTax.TaxPayer"/>
-    <fullyQualifiedTypeName name="java.security.PublicKey"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="java.io.File"/>
@@ -55,9 +50,14 @@
     <fullyQualifiedTypeName name="rectangleArea.Rectangle"/>
     <fullyQualifiedTypeName name="projectEmployee.Employee"/>
     <fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="finalGrade.Stundent"/>
+    <fullyQualifiedTypeName name="java.security.PublicKey"/>
+    <fullyQualifiedTypeName name="java.time.temporal.TemporalAmount"/>
+    <fullyQualifiedTypeName name="projetCurrencyConverter.CurrencyConverter"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="finalGrade.Stundent"/>
+    <fullyQualifiedTypeName name="employeeSalary.Employee"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="projetCompteBancaire.CompteBancaire"/>
 </qualifiedTypeNameHistroy>
