@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="projetoanimal.GoldFish"/>
-    <fullyQualifiedTypeName name="projetosobrecarga.Lobo"/>
     <fullyQualifiedTypeName name="projetosobrecarga.Mamifero"/>
     <fullyQualifiedTypeName name="projetosobrecarga.Cachorro"/>
     <fullyQualifiedTypeName name="projetoControlador.Controlador"/>
@@ -56,8 +54,10 @@
     <fullyQualifiedTypeName name="projetAccount.Account"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="exemplo2.Product"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.nio.channels.AcceptPendingException"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.multi.MultiButtonUI"/>
+    <fullyQualifiedTypeName name="javax.naming.ContextNotEmptyException"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

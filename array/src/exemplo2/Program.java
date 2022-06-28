@@ -16,7 +16,7 @@ public class Program {
 		for (int i=0; i<vect.length; i++) {
 			sc.nextLine();
 			String name = sc.nextLine();
-			double price = sc.nextDouble();
+			double price = sc.nextDouble();			
 			vect[i] = new Product(name, price);
 		}
 		
@@ -24,9 +24,9 @@ public class Program {
 		for (int i=0; i<vect.length; i++) {
 			sum += vect[i].getPrice();
 		}
-		
 		double avg = sum / n;
-		System.out.printf("Average price: %.2f%n", avg);
+		
+		System.out.printf("AVERAGE PRICE = %.2f%n", avg);
 		
 		sc.close();		
 	}
