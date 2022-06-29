@@ -7,24 +7,27 @@ Gender: 'f' or 'm';
 Civil Status: 's', 'c', 'v', 'd';
 */
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-
+		
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+		System.out.println();
 		
 		String name;
 		int age;
 		double salary;
 		String gender;
-		String civilStatus;
+		String matiralCivil;
 		
 		do {
 			System.out.print("Type your name: ");
 			name = sc.next();			
-		} while (name.length() <= 3);
+		} while(name.length() <= 3);
 		
 		do {
 			System.out.print("Type your age: ");
@@ -42,11 +45,12 @@ public class Main {
 		} while (!gender.equalsIgnoreCase("m") && !gender.equalsIgnoreCase("w"));
 		
 		do {
-			System.out.print("Type your civil status: ");
-			civilStatus = sc.next();			
-		} while (!civilStatus.equalsIgnoreCase("s") && 
-				 !civilStatus.equalsIgnoreCase("c") &&
-				 !civilStatus.equalsIgnoreCase("v") && 
-				 !civilStatus.equalsIgnoreCase("d"));
+			System.out.print("Type your marital status: ");
+			matiralCivil = sc.next();
+		} while (!matiralCivil.equalsIgnoreCase("s") &&
+				 !matiralCivil.equalsIgnoreCase("c") &&
+				 !matiralCivil.equalsIgnoreCase("v") &&
+				 !matiralCivil.equalsIgnoreCase("d"));
+		
 	}
 }
