@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="projetosobrecarga.Cachorro"/>
     <fullyQualifiedTypeName name="projetoControlador.Controlador"/>
     <fullyQualifiedTypeName name="projetoControlador.ControleRemoto"/>
     <fullyQualifiedTypeName name="projectEmployee.OutsourceEmployee"/>
@@ -49,15 +48,16 @@
     <fullyQualifiedTypeName name="projetCurrencyConverter.CurrencyConverter"/>
     <fullyQualifiedTypeName name="employeeSalary.Employee"/>
     <fullyQualifiedTypeName name="projetCompteBancaire.CompteBancaire"/>
-    <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="projetAccount.Account"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.nio.channels.AcceptPendingException"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.multi.MultiButtonUI"/>
     <fullyQualifiedTypeName name="javax.naming.ContextNotEmptyException"/>
+    <fullyQualifiedTypeName name="exemplo2.Product"/>
+    <fullyQualifiedTypeName name="application2.Rent"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="exemplo2.Product"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="application2.Rent"/>
+    <fullyQualifiedTypeName name="java.util.Locale.IsoCountryCode"/>
 </qualifiedTypeNameHistroy>
