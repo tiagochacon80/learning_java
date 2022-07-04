@@ -55,9 +55,9 @@
     <fullyQualifiedTypeName name="javax.naming.ContextNotEmptyException"/>
     <fullyQualifiedTypeName name="exemplo2.Product"/>
     <fullyQualifiedTypeName name="application2.Rent"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Locale.IsoCountryCode"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Locale.IsoCountryCode"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
