@@ -36,7 +36,7 @@ public class Program {
 		
 		RentalService rentalService = new RentalService(pricePerDay, pricePerHour, new BrazilTaxService());
 		
-		rentalService.processInvoide(cr);
+		rentalService.processInvoice(cr);
 		
 		System.out.println("INVOICE: ");
 		System.out.println("Basic payment: " + String.format("%.2f", cr.getInvoice().getBasicPayment()));
