@@ -18,8 +18,17 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		
-		
+		System.out.print("Enter department's name: ");
+		String departmentName = sc.nextLine();
+		System.out.println("Enter worker data:");
+		System.out.print("Name: ");
+		String workerName = sc.nextLine();
+		System.out.print("Leval: ");
+		String workerLevel = sc.nextLine();
+		System.out.print("Base salary: ");
+		double baseSalary = sc.nextDouble();
+		System.out.print("how many contracts to this worker: ");
+		Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, new Department(departmentName));
 		
 		
 		
