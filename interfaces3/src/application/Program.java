@@ -1,6 +1,6 @@
 package application;
 
-import entities.CanadaInterestService;
+import services.CanadaInterestService;
 
 import java.util.Locale;
 import java.util.Scanner;
