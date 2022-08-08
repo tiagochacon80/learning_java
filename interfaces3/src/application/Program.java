@@ -1,6 +1,7 @@
 package application;
 
 import services.CanadaInterestService;
+import services.InterestService;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -17,7 +18,7 @@ public class Program {
         System.out.print("Months: ");
         int months = sc.nextInt();
 
-        CanadaInterestService cis = new CanadaInterestService(2.0);
+        InterestService cis = new CanadaInterestService(2.0);
         double payment = cis.payment(amount, months);
 
         System.out.println("Payment after " + months + " months:");
