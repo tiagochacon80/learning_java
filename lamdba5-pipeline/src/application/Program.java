@@ -20,7 +20,7 @@ public class Program {
         List<Integer> newList = list.stream()
                 .filter(x -> x % 2 == 0)
                 .map(x -> x * 10)
-                .collect(Collectors.toList()); /
+                .collect(Collectors.toList());
         System.out.println(Arrays.toString(newList.toArray()));
     }
 }
